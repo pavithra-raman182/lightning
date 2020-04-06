@@ -1,0 +1,14 @@
+uuid: 23f870f5-2746-48a1-b7ad-3ffac09d085c
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.page_creator
+  module:
+    - user
+id: user_remove_role_action.page_creator
+label: 'Remove the Basic page creator role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: page_creator

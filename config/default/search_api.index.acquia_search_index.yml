@@ -1,0 +1,53 @@
+uuid: 909fbdc5-ffcb-4c60-a495-511e77c54690
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - search_api.server.acquia_search_server
+  module:
+    - node
+    - search_api
+_core:
+  default_config_hash: 5kXLh0sYJ2Yc_THnDbYg_pPAc1UJ0gabzabQYjrYyAc
+id: acquia_search_index
+name: 'Acquia Search Solr Index'
+description: ''
+read_only: true
+field_settings:
+  body:
+    label: Body
+    datasource_id: 'entity:node'
+    property_path: body
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.body
+  title:
+    label: Title
+    datasource_id: 'entity:node'
+    property_path: title
+    type: text
+    dependencies:
+      module:
+        - node
+datasource_settings:
+  'entity:node':
+    bundles:
+      default: true
+      selected: {  }
+    languages:
+      default: true
+      selected: {  }
+processor_settings:
+  add_url: {  }
+  aggregated_field: {  }
+  language_with_fallback: {  }
+  rendered_item: {  }
+tracker_settings:
+  default:
+    indexing_order: fifo
+options:
+  index_directly: false
+  cron_limit: 50
+server: acquia_search_server

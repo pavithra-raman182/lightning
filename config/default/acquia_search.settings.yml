@@ -1,0 +1,9 @@
+host: search.acquia.com
+path: ''
+derived_key_salt: 4c5ae481afb041cdc85faaa914ea7200
+version: 8.x-1.21
+default_search_core: null
+disable_auto_read_only: false
+disable_auto_switch: false
+_core:
+  default_config_hash: IpM0ZqDwJ_fmeUf7xDGKagvDHx4TSaxaq_Z4VSgJAkg
